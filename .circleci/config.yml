@@ -1,6 +1,8 @@
 version: 2.1
 jobs:
   build:
+    machine: true
+    resource_class: doyensectesting/class-1
     working_directory: ~/mern-starter
     docker:
       - image: circleci/node:10.16.3
