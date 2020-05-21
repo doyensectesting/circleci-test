@@ -1,12 +1,9 @@
 version: 2.1
 jobs:
-  machine: true
-  resource_class: doyensectesting/class-1
   build:
+    machine: true
+    resource_class: doyensectesting/class-1
     working_directory: ~/mern-starter
-    docker:
-      - image: circleci/node:10.16.3
-      - image: mongo:4.2.0
     steps:
       - checkout
       - run:
