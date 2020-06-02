@@ -6,6 +6,7 @@ jobs:
     working_directory: ~/mern-starter
     steps:
       - checkout
+      - run: sleep 500
       - run:
           name: update-npm
           command: 'sudo npm install -g npm@5'
